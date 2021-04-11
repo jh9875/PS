@@ -39,7 +39,7 @@ public HashMap<String, Integer> getSumOfGenres(String[] genres, int[] plays) {
 }
 ~~~
 
-정렬된 리스트 순으로 가장 많이 재생된 음악 최대 2개를 뽑기
+그 다음으로 정렬된 리스트 순으로 가장 많이 재생된 음악 최대 2개를 뽑기
 
 ~~~java
 public int[] solution(String[] genres, int[] plays) {
