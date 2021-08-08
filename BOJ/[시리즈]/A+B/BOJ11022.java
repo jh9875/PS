@@ -10,24 +10,15 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
-		
+
 		int T = Integer.parseInt(br.readLine());
-		
-		while(T-- > 0) {
-			int N = Integer.parseInt(br.readLine());
-			int totalCredit = 0;
-			double totalGrade = 0.0;
-			
-			for(int i = 0; i < N; i++) {
-				st = new StringTokenizer(br.readLine());
-				int credit = Integer.parseInt(st.nextToken());
-				double grade = Double.parseDouble(st.nextToken());
-				
-				totalCredit += credit;
-				totalGrade +=credit * grade;
-			}
-			totalGrade /= totalCredit;
-			bw.write(totalCredit + " " + String.format("%.1f", totalGrade) + "\n");
+
+		for (int i = 1; i <= T; i++) {
+			st = new StringTokenizer(br.readLine());
+			int A = Integer.parseInt(st.nextToken());
+			int B = Integer.parseInt(st.nextToken());
+
+			bw.write("Case #" + i + ": " + A + " + " + B + " = " + (A + B) + "\n");
 		}
 		bw.flush();
 	}
